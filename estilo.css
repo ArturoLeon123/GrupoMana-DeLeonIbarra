@@ -1,0 +1,474 @@
+
+*{
+    margin: 0;
+    padding: 0;
+     
+}
+
+@media only screen and (min-width:480px){
+
+
+    /* Estilo a todos los Titulos */
+    h1{
+        font-style: italic;
+        font-size: 90px;
+        text-align: center;
+        background: linear-gradient(to left, red,blue);
+        box-shadow: rgb(129, 119, 119) 10px 10px 25px;  
+        animation-name: Giro;
+        animation-duration: 10s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    /* Aplica para todas las listas */
+    li{
+        font-size: 20px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    nav{
+        position:absolute;
+        height: 80px;
+        width: 80%;
+        margin-top: 50px; right: 0px;
+    }
+
+
+    #navigate{
+        height: 100%;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;     
+        position:relative;
+        
+    }
+
+    h2{
+        margin-top: 150px;
+        padding-left: 50px;
+        font-style: oblique;
+        color: blue;
+        font-size: 30px;
+    }
+
+    #PlayList{
+        width:100%;
+        margin-top: 50px;                
+        } 
+
+        
+    #flex{
+        display: flex;
+        justify-content: space-evenly;
+        height: 400px;
+        align-items: center;
+        align-content: center;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    /* a = todos los links en el html*/
+    a{
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    main{
+        font-size:20px;
+        background-color: rgb(108, 108, 216); 
+    }
+
+    /* aplica para todas las imagenes que no tiene clase ejemplo: HTML Galeria */
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Aplica a la imagen de todos los NAV (imagen autor) */
+    #Imag{  
+        margin-left: -120px;
+        height: 100%;
+        width: 60px; 
+    }
+
+    /* Aplica para imagen central del HTML Index */
+    #Imag2{
+        display:block;
+        margin:auto;
+        height: 200px;
+        width: 350px;   
+    }
+
+    #grilla3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 500px;
+        grid-template-areas: "list pic";
+        justify-items: center;
+        align-items: center;
+        
+
+    }
+
+    #ListaDiscos li{
+        font-size:calc( 1.6vw );
+    }
+
+
+    #ListaDiscos{
+       grid-area: list;
+    }
+
+    #picture{
+        height: 50%;
+        grid-area: pic;
+    }
+
+      
+    article{
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;        
+
+    }
+
+           
+    #Grilla{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 200px 250px 250px 250px;
+        grid-template-areas: "a1 a1 a1 a1"
+                            "a2 a3 a4 a5"
+                            "a6 a7 a8 a9"
+                            "a10 a11 a11 a12";
+                            
+        justify-items: center;
+        align-items: center;
+        
+        
+    }
+
+    .galery{
+        width: 95%;
+        height: 95%;
+
+    }
+
+    #Pic1{
+        grid-area: a1;
+        width: 80%;
+        height: 90%;
+    }
+
+
+    #Pic12{
+        grid-area: a11;
+        width: 90%;
+        height: 80%;
+    }
+
+    section{
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(174, 21, 54);
+        
+    }
+
+    #button{
+        color: blue;
+        width: 60px;
+        height: 20px;
+        font-size: 15px;
+    }
+
+    /* Comun para todos los Footers */
+    Footer{  
+        width: 100%;  
+        height: 80px;
+        justify-content: center;
+        text-align:center;
+        font-style: italic;
+        color: white;
+        background-color:black;
+        margin-top: 20px;
+        
+    }
+
+    #Icons{
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        font-size: 30px;    /*Los iconos se comportan como texto, por esa razon font-size ayuda a ajustar el tamaño*/
+        
+
+    }
+
+
+}
+
+@media only screen and ( max-width:480px){
+
+        /* Estilo a todos los Titulos */
+    h1{
+        font-style: italic;
+        font-size: 30px;
+        text-align: center;
+        background: linear-gradient(rgb(179, 6, 0), rgb(38, 0, 255));
+        
+    }
+
+    /* Aplica para todas las listas */
+    li{
+        font-size: 10px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    /* Aplica para todas los NAV */
+
+    nav{
+        height: 30px;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+
+    nav{
+        position:absolute;
+        height: 20px;
+        width: 80%;
+        margin-top: 30px; 
+        right: 0px;
+    }
+
+
+    #navigate{
+        height: 100%;
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        list-style-type: none;
+        align-items: center;
+        background-color: black;     
+        position:relative;
+        
+    }
+
+    h2{
+        margin-top: 80px;
+        padding-left: 20px;
+        font-style: oblique;
+        color: blue;
+        font-size: 15px;
+    }
+
+    h3{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    #PlayList{
+        width:100%;
+        margin-top: 50px;
+                   
+        } 
+
+
+    /* a = todos los links en el html*/
+    a{
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    main{
+        font-size:10px;
+        background-color: rgb(108, 108, 216); 
+    }
+
+    /* aplica para todas las imagenes que no tiene clase ejemplo: HTML Galeria */
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Aplica para imagen central del HTML Index */
+    #Imag2{
+        display:block;
+        margin:auto;
+        height: 70px;
+        width: 120px;   
+    }
+
+    #grilla3{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 350px;
+        grid-template-areas: "list pic";
+        justify-items: center;
+        align-items: center;
+        
+
+    }
+
+    #ListaDiscos{
+        grid-area: list;
+    }
+
+    #picture{
+        height: 50%;
+        grid-area: pic;
+    }
+
+    section{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgb(174, 21, 54);
+        
+    }
+
+    article{
+        margin-top: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    /* Flex de HTML Musica, da estilo a UL lista de canciones, Ul de Musica e imagen  */
+    #flex{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 0px;
+        height: 300px;
+        justify-items: center;
+        align-items: center;   
+    }
+
+    #Grilla{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 70px 70px 70px 70px 70px;
+        grid-template-areas: "a1 a1 a1"
+                            "a2 a3 a4"
+                            "a5 a6 a7"
+                            "a8 a9 10"
+                            "a11 a11 a12";
+                            
+        justify-items: center;
+        align-items: center;
+    
+    }
+
+    .galery{
+        width: 95%;
+        height: 95%;
+
+    }
+
+    #Pic1{
+        grid-area: a1;
+        width: 80%;
+        height: 90%;
+    }
+
+
+    #Pic12{
+        grid-area: a11;
+        width: 80%;
+        height: 90%;
+    }
+
+    #button{
+        color: blue;
+        width: 40px;
+        height: 12px;
+        font-size: 8px;
+    }
+
+    /* Comun para todos los Footers */
+    Footer{    
+        height: 60px;
+        margin-top: 20px;
+        text-align:center;
+        font-style: italic;
+        color: white;
+        background-color:black;
+        
+    }
+
+    #Icons{
+        align-items: center;
+        height: 20px;
+        width: 20px;
+        font-size: 20px;    /*Los iconos se comportan como texto, por esa razon font-size ayuda a ajustar el tamaño*/
+    } 
+
+}
+
+
+#TextoLibre{
+height: calc(20px + 10vw);
+width: 33%;
+
+}
+
+iframe{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+img:hover{
+    transform:scale(1.5,1.5)
+
+}
+
+li:hover{
+    text-transform: uppercase;
+    transform: scale(1.5,1.5);
+    background-color:rgb(73, 73, 120);
+    border-radius: 5px 5px 5px 5px;
+    text-shadow: 20px;
+}
+
+input:hover{
+    color:blue;
+}
+
+h1:hover{
+    background: linear-gradient(to bottom, blue,red);
+    
+}
+
+@keyframes Giro{
+    50%{
+        -moz-transform: scaleX(-1);
+    }
+
+    100%{
+        -moz-transform: scaleX(1);
+    }
+
+}
+
+
+
+
+
